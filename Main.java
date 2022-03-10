@@ -1,9 +1,6 @@
 class Main{
 	public static void main(String[]args){
 		Motor miMotor = new Motor();
-
-
-		Ventana miVentana = new Ventana();
 		Puerta miPuerta = new Puerta();
 		Coche miCoche = new Coche();
 
@@ -27,13 +24,12 @@ class Main{
 
 
 		miPuerta.getVentana().abrir();
-		
+
 		System.out.println(miPuerta);
 
 
         // Primero, encendemos el motor
         miCoche.getMotor().encender();
-
         // Segundo, abrimos ambas puertas
         miCoche.getPuertaI().abrir();
         miCoche.getPuertaD().abrir();

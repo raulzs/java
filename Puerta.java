@@ -1,7 +1,7 @@
     class Puerta{
 	private boolean estado;
 	private Ventana ventana;
-	
+
 
 	public Puerta(){
 	this.estado = false;
@@ -27,7 +27,7 @@
 
 	public String toString(){
 		String resultado = "Puerta: Cerrada";
-		if(this.estado == true){
+		if(this.estado){
 			resultado = "Puerta: Abierta";
 		}
 
