@@ -1,27 +1,30 @@
-    class Motor{
-	private boolean encendido;
+ class Motor{
+	private boolean estado;
 	
 
 	public Motor(){
-	this.encendido = false;
+	this.estado = false;
 	}
 
-	public boolean getEncendido(){
-		return this.encendido;
+	public boolean getEstado(){
+		return this.estado;
 	}
 
+	public void setEstado(boolean estado){
+		this.estado = estado;
+	}
 	public void encender(){
-		this.encendido = true;
+		this.setEstado (true);
 	}
 
 	public void apagar(){
-		this.encendido = false;
+		this.setEstado (false);
 	}
 
 	public String toString(){
 		String resultado = "Motor: Apagado";
 		
-		if (this.encendido == true){
+		if (this.estado){
     	resultado = "Motor : Encendido";
     }
 

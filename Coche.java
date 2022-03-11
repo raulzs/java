@@ -17,6 +17,10 @@ class Coche{
 		return this.puertaDerecha;
 	}
 
+	public Motor getMotor(){
+		return this.motorCoche;
+	}
+
 	public String toString(){
 		return motorCoche +"|"  + "PuertaI:{ " + puertaIzquierda + "}" + "|" + "PuertaD:{ " + puertaDerecha + "}";
 	}
