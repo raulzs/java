@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Main{
 	public static void main(String[]args){
 		Motor miMotor = new Motor();
@@ -5,7 +7,10 @@ class Main{
 		Puerta miPuerta = new Puerta();
 		Coche miCoche = new Coche();
 		Ventana ventanaDerCoche = new Ventana();
-		System.out.println(miCoche);
+		Scanner teclado = new Scanner(System.in);
+		int preguntar;
+
+		/** System.out.println(miCoche);
 //Ver, como esta la ventana de la puerta derecha:
 System.out.println(miCoche.getPuertaD().getVentana());
 
@@ -25,7 +30,7 @@ ventanaDerCoche.abrir();
 System.out.println(ventanaDerCoche);
 ventanaDerCoche.cerrar();
 System.out.println(ventanaDerCoche);
-
+*/
 
 			  // Segundo, abrimos ambas puertas
       //  miCoche.getPuertaD().abrir();
@@ -33,6 +38,22 @@ System.out.println(ventanaDerCoche);
       //  miCoche.getPuertaI().getVentana().abrir();
 				//System.out.println(miCoche);
 //*
+
+System.out.println(miCoche);
+
+System.out.println("\nElige cual de las puertas de nuestro coche abrir\nEscribiendo un numero del 1 al 4 siguiendo el siguiente esquema:\n\nPuerta Delantera Izquierda: 1\nPuerta Delantera Derecha: 2\nPuerta Trasera Izquierda: 3\nPuerta Trasera Derecha: 4\n\nPuerta: ");
+preguntar = teclado.nextInt();
+
+miCoche.abrirPuerta(preguntar);
+
+System.out.println(miCoche);
+
+System.out.println("\nElige cual de las ventanas de nuestro coche abrir\nEscribiendo un numero del 1 al 4 siguiendo el siguiente esquema:\n\nVentana Delantera Izquierda: 1\nVentana Delantera Derecha: 2\nVentana Trasera Izquierda: 3\nVentana Trasera Derecha: 4\n\nVentana: ");
+preguntar = teclado.nextInt();
+
+miCoche.abrirVentana(preguntar);
+
+System.out.println(miCoche);
 
 	}
 }

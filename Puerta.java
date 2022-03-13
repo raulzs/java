@@ -31,7 +31,7 @@
 			resultado = "Puerta: Abierta";
 		}
 
-		resultado = ventana + "" + resultado;
+		resultado = ventana + " | " + resultado;
 		return resultado;
 
 	}
