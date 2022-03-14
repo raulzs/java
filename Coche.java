@@ -29,21 +29,22 @@ class Coche{
 		return this.puerta_Trasera_Derecha;
 	}
 
+//Cambiar los gets.
 	public void abrirPuerta(int numero){
 		if (numero == 1){
-			this.getPuertaI().abrir();
+			this.puertaIzquierda.abrir();
 		}
 
 		if (numero == 2){
-			this.getPuertaD().abrir();
+			this.puertaDerecha.abrir();
 		}
 
 		if (numero == 3){
-			this.getPuertaTI().abrir();
+			this.puerta_Trasera_Izquierda.abrir();
 		}
 
 		if (numero == 4){
-			this.getPuertaTD().abrir();
+			this.puerta_Trasera_Derecha.abrir();
 		}
 
 		else if (numero >=5 || numero >1){
@@ -53,11 +54,11 @@ class Coche{
 
 	public void abrirVentana(int numero){
 		if (numero == 1){
-			this.getPuertaI().getVentana().abrir();
+			this.puertaIzquierda.getVentana().abrir();
 		}
 
 		if (numero == 2){
-			this.getPuertaD().getVentana().abrir();
+			this.puertaDerecha.getVentana().abrir();
 		}
 
 		if (numero == 3){
