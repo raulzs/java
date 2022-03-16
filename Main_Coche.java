@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main{
+class Main_Coche{
 	public static void main(String[]args){
 		Motor miMotor = new Motor();
 		Ventana miVentana = new Ventana();

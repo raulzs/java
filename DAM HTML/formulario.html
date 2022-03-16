@@ -6,7 +6,19 @@
     <title>Formulario</title>
   </head>
   <body>
-
+<!--Method = post o get. Post mandar info en el cuerpo del mensaje. Codificado y ci-
+frado por el protocolo HTTP. Se envía al back, lo recibe un archivo (php
+por ejemplo)
+Get mandar info en la cabecera del mensaje == en la URL == lo puede leer todo el mundo. No es apto
+para contraseñas.
+Action => Tenemos que indicar que archivo lo recibe.
+-->
+  <form method="get" action="procesamiento.php">
+    <!--Boton -->
+    <p>
+      <input type="submit" value="Click aquí"</input>
+    </p>
+  </form>
   </body>
 </html>
 <!-- -->
