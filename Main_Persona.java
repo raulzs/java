@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 class Main_Persona{
 public static void main(String[] args){
   Persona miPersona = new Persona();
@@ -10,6 +11,16 @@ public static void main(String[] args){
   System.out.print(miProfesor);
   //System.out.println(miPersona);
   //Poner los gets
-   
+
+   ArrayList<Integer> lista = new ArrayList();
+   lista.add(4);
+   lista.add(5);
+   System.out.println(lista);
+
+   ArrayList<Alumno> listaAlumno = new ArrayList();
+   listaAlumno.add(miAlumno);
+   listaAlumno.add(alumnoDefecto);
+   System.out.println(listaAlumno);
+   System.out.println(listaAlumno.get(0).getNombre());
  }
 }
