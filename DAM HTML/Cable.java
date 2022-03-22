@@ -1,4 +1,3 @@
-import java.util.Arraylist;
 public class Cable{
   private float longitud;
   private String entrada;
@@ -42,7 +41,7 @@ public class Cable{
     return this.longitud;
   }
 
-  public String getEntrada(){
+  public Stirng getEntrada(){
     return this.entrada;
   }
 
@@ -50,20 +49,8 @@ public class Cable{
     return this.saida;
   }
 
-  public boolean getUSBDATA(){
+  public getUSBDATA(){
     return this.USB_data;
-  }
-
-  public void CablesUtiles(ArrayList<String> listaCables, ArrayList<Boolean> listaCablesUSBData){
-    for(int i = 0; i < listaCables.size(); i++){
-      if(listaCables.get(i).contains("microUSB")&& listaCablesUSBData.get(i)==true){
-        System.out.println("uno de los cables conectados transfiere datos USB");
-      }
-    }
-  }
-
-  public String toString(){
-    return "\n\n Carecteristicas cable\n" + "Longitud: " + this.longitud + "\nTipo Entrada: " + this.entrada + "\nTipo Salida":  + this.salida + "\nTransferencia de datos USB? " + this.USB_data;
   }
 
 

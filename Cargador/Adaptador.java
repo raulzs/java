@@ -1,11 +1,11 @@
 import java.util.Scanner;
-import java.util.Arraylist;
+import java.util.ArrayList;
 
 class Adaptador{
   private int entrada;
   private int salida;
   private int puertos;
-  private int puertosDisponibles;
+  private int puertos_disponibles;
   private Scanner Teclado = new Scanner(System.in);
   private int preguntar;
 
@@ -13,35 +13,16 @@ class Adaptador{
     this.entrada = 32;
     this.salida = 12;
     this.puertos = 2;
-    this.puertosDisponibles = puerto;
+    this.puertos_disponibles = puertos;
   }
 
   public Adaptador(int entrada, int salida, int puertos){
     this.entrada = entrada;
     this.salida = salida;
     this.puertos = puertos;
-    this.puertosDisponibles = puerto;
-    if (puerto > 2) limitarPuertos(puerto);
+    this.puertos_disponibles = puertos;
+    if (puertos > 2) limitarPuertos(puertos);
   }
-
-  public void limitarPuertos(int puerto){
-    while(this.puertos > 2){
-      System.out.println("Numero de puertos: " this.puertos +"\nSuperior al maximo: 2\Introduce otro valor");
-      preguntar = Teclado.nextInt();
-      this.puertos = preguntar;
-      this.puertosDisponibles = preguntar;
-    }
-  }
-
-  public void setPuertosDisponibles(Arraylist<String>listaCables){
-    for(int i = 0; i < listaCables.size(); i++){
-      this.puertosDisponibles-=1;
-    }
-  }
-  public int getPuertosDisponibles(){
-    return this.puertosDisponibles;
-  }
-
 //Set
   public void setEntrada(int entrada){
     this.entrada = entrada;
@@ -66,6 +47,26 @@ class Adaptador{
   public int getPuertos(){
     return this.puertos;
   }
+
+  public void limitarPuertos(int puerto){
+    while (this.puertos > 2){
+      System.out.println("\nIntroduce otro numero de puertos inferior a 2: ");
+      preguntar = Teclado.nextInt();
+      this.puertos = preguntar;
+      this.puertos_disponibles = preguntar;
+    }
+
+    }
+
+  public void setPuertosDisponibles(ArrayList<String>listaCables){
+    for (int i = 0; i < listaCables.size(); i++){
+      this.puertos_disponibles-=1;
+  }
+  }
+
+    public int getPuertosDisponibles(){
+      return this.puertos_disponibles;
+    }
 
   public String toString(){
     return "Especificaciones del Adaptador\nPotencia de  Entrada: " + this.entrada + "\nPotencia de Salida: " + this.salida + "\nNumero de Puertos: " + this.puertos;
