@@ -37,7 +37,7 @@ public class Matriz {
   public void rellenarMatrizColumna(int numero){
     for(int i = 0; i < this.columnas; i++){
       for(int j = 0; j < this.filas; j++){
-        this.matriz[i][j] = numero;
+        this.matriz[j][i] = numero;
       }
       numero +=1;
     }
@@ -63,7 +63,7 @@ public class Matriz {
     for(int i = 0; i < this.filas; i++){
       System.out.print("|");
       for(int j = 0; j < this.columnas; j ++){
-        System.out.println(this.matriz[i][j]);
+        System.out.print(this.matriz[i][j]);
         System.out.print("|");
       }
       System.out.println();
