@@ -6,6 +6,33 @@
     <title>Formulario</title>
   </head>
   <body>
+    <p>Elige tu genero:<br/>
+       <input type="radio" name="genero" value="hombre" id = "idHombre">
+       <label for="idHombre">Hombre</label><br/>
+       <input type="radio" name="genero" value="mujer" id = "idMujer">
+       <label for="idMujer">Mujer</label><br/>
+       <input type="radio" name="genero" value="NoBinario" id = "idNoBinario">
+       <label for="idNoBinario">No Binario</label><br/>
+     </p>
+
+     <p>
+       Comida favorita: <br/>
+       <input type="checkbox" name="comida[]" value="CarneS" id="idCarneS">
+       <label for="idCarneS">Carne en salsa</label><br/>
+       <input type="checkbox" name="comida[]" value="lasaña" id="idLasaña">
+       <label for="idLasaña">Lasaña</label><br/>
+       <input type="checkbox" name="comida[]" value="pan" id="idPan">
+       <label for="idPan">Pan</label><br/>
+       <input type="checkbox" name="comida[]" value="pizza" id="idPizza">
+       <label for="idPizza">Pizza</label><br/>
+       <input type="checkbox" name="comida[]" value="solomillo" id="idSolomillo">
+       <label for="idSolomillo">Solomillo salsa Roquefort</label><br/>
+       <input type="checkbox" name="comida[]" value="macarrones" id="idMacarrones">
+       <label for="idMacarrones">Macarrones con tomatico</label><br/>
+       <input type="checkbox" name="comida[]" value="croquetas" id="idCroquetas">
+       <label for="idCroquetas">Croquetas</label><br/>
+       <input type="checkbox" name="comida[]" value="migas" id="idMigas">
+       <label for="idMigas">Migas con melón</label>
 <!--Method = post o get. Post mandar info en el cuerpo del mensaje. Codificado y ci-
 frado por el protocolo HTTP. Se envía al back, lo recibe un archivo (php
 por ejemplo)
@@ -30,6 +57,32 @@ Action => Tenemos que indicar que archivo lo recibe.
     <p>
       <input type="submit" value="Click aquí"</input>
     </p>
+    <p>Elige tu genero:<br/>
+       <input type="radio" name="genero" value="hombre" id = "idHombre">
+       <label for="idHombre">Hombre</label><br/>
+       <input type="radio" name="genero" value="mujer" id = "idMujer">
+       <label for="idMujer">Mujer</label><br/>
+       <input type="radio" name="genero" value="NoBinario" id = "idNoBinario">
+       <label for="idNoBinario">No Binario</label><br/>
+     </p>
+     <p>
+       Comida favorita: <br/>
+       <input type="checkbox" name="comida[]" value="CarneS" id="idCarneS">
+       <label for="idCarneS">Carne en salsa</label><br/>
+       <input type="checkbox" name="comida[]" value="lasaña" id="idLasaña">
+       <label for="idLasaña">Lasaña</label><br/>
+       <input type="checkbox" name="comida[]" value="pan" id="idPan">
+       <label for="idPan">Pan</label><br/>
+       <input type="checkbox" name="comida[]" value="pizza" id="idPizza">
+       <label for="idPizza">Pizza</label><br/>
+       <input type="checkbox" name="comida[]" value="solomillo" id="idSolomillo">
+       <label for="idSolomillo">Solomillo salsa Roquefort</label><br/>
+       <input type="checkbox" name="comida[]" value="macarrones" id="idMacarrones">
+       <label for="idMacarrones">Macarrones con tomatico</label><br/>
+       <input type="checkbox" name="comida[]" value="croquetas" id="idCroquetas">
+       <label for="idCroquetas">Croquetas</label><br/>
+       <input type="checkbox" name="comida[]" value="migas" id="idMigas">
+       <label for="idMigas">Migas con melón</label>
   </form>
   </body>
 </html>
