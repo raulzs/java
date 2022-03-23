@@ -11,6 +11,15 @@ class Main_Matriz{
     Matriz matrizcolumna = new Matriz("columna");
     matrizcolumna.imprimir();
 
+    Matriz matrizposicion = new Matriz("posicion");
+    matrizposicion.imprimir();
+
+    Matriz matrizsuma = new Matriz("suma");
+    matrizsuma.imprimir();
+
+    Matriz matrizmultiplicacion = new Matriz("Multiplicacion");
+    matrizmultiplicacion.imprimir();
+
 
   }
 }
