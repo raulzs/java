@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method= "get" action="almacenar.php">
+      <p>
+      <label for="idCliente">
+        Nombre del Cliente
+      </label>
+      <input type="text" name="cliente" id="idCliente" placeholder="Nombre del cliente"><br/><br/>
+      <label for="idfecha">
+        Fecha de atención:
+      </label>
+      <input type="date" name="fecha" id="idfecha"><br></br>
+
+      <label for="idhora">
+        Fecha de entrega:
+      </label>
+      <input type="time" name="hora" id="idhora"><br></br>
+      </p>
+
+      <p>
+        <label for="idServicio">Tipo de Servicio: </label>
+        <select name ="Servicio" id="idServicio">
+          <option value="domicilio">Para llevar</option>
+          <option value="restaurante">En mesa</option>
+        </select>
+        <p/>
+
+        <p>
+          Bebida: <br/>
+          <label for="idagua">Agua 1L</label>
+          <input type="radio" name="bebida" value="agua" id="idagua"><br/>
+
+          <label for="idzumo">Zumo de Piña</label>
+          <input type="radio" name="bebida" value="zumo" id="idzumo"><br/>
+
+        </p>
+
+        <p>
+          Primer Plato: <br/>
+          <label for="idcarne">Carne en Salsa</label>
+          <input type="checkbox" name="primeros[]" value="carne" id="idcarne"><br/>
+
+          <label for="idpescado">Lubina</label>
+          <input type="checkbox" name="primeros[]" value="pescado" id="idpescado"><br/>
+
+          <label for="idpescado">Paella</label>
+          <input type="checkbox" name="primeros[]" value="paella" id="idpaella"><br/>
+
+          <label for="idpescado">Pizza</label>
+          <input type="checkbox" name="primeros[]" value="pizza" id="idpizza"><br/>
+
+          <label for="idpescado">Ensaladilla</label>
+          <input type="checkbox" name="primeros[]" value="ensaladilla" id="idensaladilla"><br/>
+          </p>
+          <p>
+            <label for="idpostres"> Postres </label>
+          <input list="postres" name="Lospostres" id="idpostres">
+          <datalist id="postres">
+            <option value="Helado de chocolate"/>
+            <option value="Melon"/>
+            <option value="Tarta de queso"/>
+            <option value="Tarta de frambuesas"/>
+          </datalist>
+          </p>
+          <p>
+            <label for="idpropina">Propina a Servicio:</label>
+            <input list="propinas" name="lapropina" id="idpropina">
+            <datalist id="propinas">
+              <option value="5"/>
+              <option value="10"/>
+              <option value="15"/>
+              <option value="20"/>
+            </datalist>
+          </p>
+          <p>
+            <input type="submit"value="Enviar a Cocina!">
+          </p>
+    </form>
+
+  </body>
+</html>
